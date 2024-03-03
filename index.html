@@ -127,6 +127,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	  	<p>Is your mole symmetrical? (Are the two halves of your mole mirror images of each other?) </p> <!--I asked the question for Question 1 (Q1) here.-->  
 	  	<a href="#two" onclick="benign_add();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes (symmetrical) button for Q1. If clicked, adds one to benign_count-->
       <a href="#two" onclick="malignant_add();" class="w3-btn w3-orange"> No </a> <!-- Create No (asymmetrical) button for Q1. If clicked, adds one to malignant_count-->
+      <p><br></p> <!--I added vertical space between the Yes/No buttons and the image-->
       <img src="images/mole_symmetry.png" 
       alt="Mole Symmetry Diagram"> <!--I added an image to Question 1-->
     </div>
@@ -142,6 +143,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <p>Does your mole have an irregular or poorly defined border that blends into the surrounding skin?</p> <!--I asked the question for Q2 here.--> 
       <a href="#three" onclick="malignant_add();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q2. If clicked, adds one to malignant_count-->
       <a href="#three" onclick="benign_add();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q2. If clicked, adds one to benign_count-->
+      <p><br></p> <!--I added vertical space between the Yes/No buttons and the image-->
       <img src="images/mole_definition.png"
       alt="Mole Definition Diagram"> <!--I added an image to Question 2-->
     </div>
@@ -154,11 +156,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
     <div id="content" class="w3-container"> <!--creating the question and buttons for Q3-->
       <p>Does your mole have one uniform color or has multiple colors?</p> <!--I asked the question for Q3 here.--> 
-      <br>
+      <br> <!--I added an extra line of whitespace in order for Question 3 to have the same spacing as Questions 1 and 2.-->
       <a href="#four" onclick="benign_add();" class="w3-btn w3-orange"> Uniform </a> <!-- Create Yes (Uniform) button for Q3. If clicked, adds one to benign_count-->
       <a href="#four" onclick="malignant_add();" class="w3-btn w3-orange"> Multiple </a> <!-- Create No (Multiple) button for Q3. If clicked, adds one to malignant_count-->
+      <p><br></p> <!--I added vertical space between the Yes/No buttons and the image-->
       <img src="images/mole_color_number.png"
-      alt="Mole Color Number"> <!--I added an image to Question 3-->
+      alt="Mole Color Number Diagram"> <!--I added an image to Question 3-->
     </div>
   </div>
 <!-- this section displays Page for Question 4 and gives user the yes/no options-->
@@ -169,8 +172,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
     <div id="content" class="w3-container">
       <p>Is your mole larger than 6 mm (about the size of a pencil eraser)?</p> <!--I asked the question for Q4 here.--> 
+      <br> <!--I added an extra line of whitespace in order for Question 4 to have the same spacing as Questions 1 and 2.-->
       <a href="#five" onclick="malignant_add();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q4. If clicked, adds one to malignant_count-->
       <a href="#five" onclick="benign_add();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q4. If clicked, adds one to benign_count-->
+      <p><br></p> <!--I added vertical space between the Yes/No buttons and the image-->
+      <img src="images/mole_size.png"
+      alt="Mole Size Diagram"> <!--I added an image to Question 4-->
     </div>
   </div>
   <!-- this section displays Page for Question 5 and gives user the yes/no options-->
@@ -183,6 +190,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <p>Has your mole changed over time, such as growing larger or changing color? </p> <!--I asked the question for Q5 here.-->
       <a href="#six" onclick="malignant_add();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q5. If clicked, adds one to malignant_count-->
       <a href="#six" onclick="benign_add();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q5. If clicked, adds one to benign_count-->
+      <p><br></p> <!--I added vertical space between the Yes/No buttons and the image-->
+
     </div>
   </div>
   <div class="page" id="six">
