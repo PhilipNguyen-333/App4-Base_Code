@@ -37,24 +37,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </head> 
 
 <script>
-  // The following code lets you know when the file was last modified.
-  // This will help you know if you are looking at the new version of the file or if there is a delay on GitHub.
-  var docMod = document.lastModified;
-        alert("This file last modified  " + docMod);
-        console.log("This file last modified  " + docMod);
-  // If you find the alert box annoying, comment out that line and timestamp will still show up in the debugging console
-
-
   var malignant_count = 0;//variable to keep track of the number of times the user answers a question that leads to the malignant diagnosis 
   var benign_count = 0;//variable to keep track of the number of times the user answers a question that leads to the benign diagnosis 
   
   function malignant_add(){ //this function is used to add an additional count to malignant_count each time it is called
     malignant_count = malignant_count + 1; 
-    alert("malignant_count is " + malignant_count); //I wanted to further clarify that the alert is displaying the count for malignant_count, but this code is now irrelevant
   }
   function benign_add(){
     benign_count = benign_count + 1;//this function is used to add an additional count to benign_count each time it is called
-		alert("benign_count is " + benign_count); //I wanted to add further clarify that the alert is displaying the count for benign_count, but this code is now irrelevant
   }
 
 	function changeText(){
