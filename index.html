@@ -148,11 +148,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     </div>
 
     <div id="content" class="w3-container">
-      <p>Are your symptoms seasonal or chronic?</p> <!--I asked the question for Q4 here.--> 
-      <a href="#five" onclick="benign_add();" class="w3-btn w3-orange"> Seasonal </a> <!-- Create Yes (Seasonal) button for Q4. If clicked, adds one to allergy_count-->
-      <a href="#five" onclick="malignant_add();" class="w3-btn w3-orange"> Chronic </a> <!-- Create No (Chronic) button for Q4. If clicked, adds one to cold_count-->
+      <p>Is your mole larger than 6 mm (about the size of a pencil eraser)?</p> <!--I asked the question for Q4 here.--> 
+      <a href="#five" onclick="malignant_add();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q4. If clicked, adds one to malignant_count-->
+      <a href="#five" onclick="benign_add();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q4. If clicked, adds one to benign_count-->
     </div>
   </div>
+  <!-- this section displays Page for Question 5 and gives user the yes/no options-->
   <div class="page" id="five">
     <div id="header" class="w3-container w3-flat-carrot"> <!-- creating the header for Q5-->
       <h1>Question 5</h1>
