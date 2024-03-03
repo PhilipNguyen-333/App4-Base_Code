@@ -37,6 +37,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </head> 
 
 <script>
+  // The following code lets you know when the file was last modified.
+  // This will help you know if you are looking at the new version of the file or if there is a delay on GitHub.
+  var docMod = document.lastModified;
+        alert("This file last modified  " + docMod);
+        console.log("This file last modified  " + docMod);
+  // If you find the alert box annoying, comment out that line and timestamp will still show up in the debugging console
+
+
   var malignant_count = 0;//variable to keep track of the number of times the user answers a question that leads to the malignant diagnosis 
   var benign_count = 0;//variable to keep track of the number of times the user answers a question that leads to the benign diagnosis 
   
@@ -54,8 +62,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		var percent_cold = cold_count/(allergy_count + cold_count)*100; //This line converts the cold_count into a percentage
 		var initialText = document.getElementById("results"); //I put the "results" paragraph into a variable called "initialText"
 		initialText.innerHTML = "Probability it is allergies = " + percent_allergy + "% <br> Probability it is a cold = " + percent_cold + "%" //This line replaces the initialText from the Results Page with the diagnosis
-	}
-/*
+	}/*
 </script>	
 
 
