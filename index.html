@@ -58,8 +58,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   }
 
 	function changeText(){
-		var percent_malignant = malignant_count/(malignant_count + benign_count)*100; //This line converts the allergy_count into a percentage
-		var percent_benign = benign_count/(malignant_count + benign_count)*100; //This line converts the cold_count into a percentage
+		var percent_malignant = malignant_count/(malignant_count + benign_count)*100; //This line converts the malignant_count into a percentage
+		var percent_benign = benign_count/(malignant_count + benign_count)*100; //This line converts the benign_count into a percentage
 		var initialText = document.getElementById("results"); //I put the "results" paragraph into a variable called "initialText"
 		initialText.innerHTML = "Probability it is malignant = " + percent_malignant + "% <br> Probability it is a benign = " + percent_benign + "%" //This line replaces the initialText from the Results Page with the diagnosis
 	}
